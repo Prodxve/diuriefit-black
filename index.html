@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head AW-16917206966/MzU9CLLqyasaELav4II_ >
+<head>
+  <!-- ✅ Google Ads Tag — CORRIGIDA (estava como atributo inválido do <head>) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16917206966"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16917206966');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diuriefit Black — Desinche e Defina seu Corpo em Semanas | Natural & Vegano</title>
@@ -24,9 +33,7 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--black);
       color: var(--white);
@@ -36,7 +43,6 @@
       overflow-x: hidden;
     }
 
-    /* ──────────── TOPBAR ──────────── */
     .topbar {
       background: var(--green-dark);
       text-align: center;
@@ -48,7 +54,6 @@
     }
     .topbar span { margin: 0 10px; }
 
-    /* ──────────── HERO ──────────── */
     .hero {
       position: relative;
       background: var(--dark);
@@ -110,7 +115,6 @@
       letter-spacing: .5px;
     }
 
-    /* ──────────── CTA BUTTON ──────────── */
     .btn-cta {
       display: inline-block;
       background: linear-gradient(135deg, #4ade80, #22c55e);
@@ -148,7 +152,6 @@
     }
     .trust-row span::before { content: '✓ '; color: var(--green); }
 
-    /* ──────────── SECTION WRAPPER ──────────── */
     .section {
       padding: 72px 20px;
       max-width: 900px;
@@ -173,7 +176,6 @@
       margin: 0 auto;
     }
 
-    /* ──────────── SYMPTOMS ──────────── */
     .symptoms-block { background: var(--dark); }
     .symptoms-grid {
       display: grid;
@@ -192,7 +194,6 @@
     .symptom-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
     .symptom-card p { font-size: .93rem; color: #c5d9c8; }
 
-    /* ──────────── BENEFITS ──────────── */
     .benefits-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -211,7 +212,6 @@
     .benefit-card h3 { font-size: 1rem; font-weight: 800; color: var(--white); margin-bottom: 6px; }
     .benefit-card p { font-size: .85rem; color: var(--muted); }
 
-    /* ──────────── INGREDIENTS ──────────── */
     .ingredients-block { background: var(--dark); }
     .ingredients-grid {
       display: grid;
@@ -231,7 +231,6 @@
     .ing-card h4 { font-size: .95rem; font-weight: 800; color: var(--green); margin-bottom: 3px; }
     .ing-card p { font-size: .82rem; color: var(--muted); }
 
-    /* ──────────── PRICING ──────────── */
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -272,9 +271,7 @@
       margin-bottom: 6px;
     }
     .price-card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 16px; }
-    .price-card .price-installment {
-      font-size: .88rem; color: var(--muted); margin-bottom: 4px;
-    }
+    .price-card .price-installment { font-size: .88rem; color: var(--muted); margin-bottom: 4px; }
     .price-card .price-main {
       font-family: var(--font-display);
       font-size: 2.6rem;
@@ -293,7 +290,6 @@
       display: inline-block;
     }
 
-    /* ──────────── TESTIMONIALS ──────────── */
     .testimonials-block { background: var(--dark); }
     .testimonials-grid {
       display: grid;
@@ -312,7 +308,6 @@
     .testimonial-card p { font-size: .87rem; color: #b0cab4; }
     .testimonial-card .author { margin-top: 14px; font-size: .82rem; font-weight: 700; color: var(--green); }
 
-    /* ──────────── FAQ ──────────── */
     .faq-list { display: flex; flex-direction: column; gap: 12px; }
     .faq-item {
       background: var(--card);
@@ -342,11 +337,7 @@
       flex-shrink: 0;
       transition: transform .25s;
     }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease;
-    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
     .faq-answer.open { max-height: 300px; }
     .faq-question.active .arrow { transform: rotate(180deg); }
     .faq-answer-inner {
@@ -356,7 +347,6 @@
       line-height: 1.6;
     }
 
-    /* ──────────── FINAL CTA ──────────── */
     .final-cta {
       background: linear-gradient(160deg, #0a180c, #060f08);
       border-top: 1px solid var(--border);
@@ -371,7 +361,6 @@
     .final-cta h2 span { color: var(--green); }
     .final-cta p { color: var(--muted); max-width: 480px; margin: 0 auto 32px; }
 
-    /* ──────────── FOOTER ──────────── */
     footer {
       background: #050807;
       border-top: 1px solid rgba(74,222,128,.1);
@@ -392,27 +381,15 @@
       margin: 0 auto 12px;
       line-height: 1.5;
     }
-    footer .copyright {
-      font-size: .72rem;
-      color: rgba(154,176,159,.35);
-    }
+    footer .copyright { font-size: .72rem; color: rgba(154,176,159,.35); }
 
-    /* ──────────── RESPONSIVE ──────────── */
     @media (max-width: 600px) {
       .pricing-grid { grid-template-columns: 1fr; }
       .price-card.featured { margin-top: 18px; }
     }
 
-    /* ──────────── PRODUCT IMAGE ──────────── */
-    .hero-product {
-      display: flex;
-      justify-content: center;
-      margin: 28px auto 0;
-    }
-    .product-img-wrap {
-      position: relative;
-      display: inline-block;
-    }
+    .hero-product { display: flex; justify-content: center; margin: 28px auto 0; }
+    .product-img-wrap { position: relative; display: inline-block; }
     .product-img-wrap svg {
       filter: drop-shadow(0 0 40px rgba(74,222,128,.3));
       width: clamp(180px, 40vw, 280px);
@@ -434,7 +411,6 @@
       line-height: 1.4;
     }
 
-    /* ──────────── URGENCY BANNER ──────────── */
     .urgency-bar {
       background: linear-gradient(90deg, #0a1a0d, #0f2212, #0a1a0d);
       border: 1px solid rgba(74,222,128,.25);
@@ -455,12 +431,7 @@
       text-transform: uppercase;
       color: var(--green);
     }
-    .countdown {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-    }
+    .countdown { display: flex; gap: 10px; align-items: center; justify-content: center; }
     .cd-block {
       background: var(--card);
       border: 1px solid var(--border);
@@ -469,55 +440,21 @@
       text-align: center;
       min-width: 56px;
     }
-    .cd-num {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      color: var(--green);
-      line-height: 1;
-    }
-    .cd-label {
-      font-size: 9px;
-      letter-spacing: .8px;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .cd-sep {
-      font-family: var(--font-display);
-      font-size: 1.6rem;
-      color: var(--green);
-      opacity: .5;
-    }
-    .stock-bar-wrap {
-      width: 100%;
-      max-width: 280px;
-    }
-    .stock-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--muted);
-      margin-bottom: 6px;
-      text-align: left;
-    }
+    .cd-num { font-family: var(--font-display); font-size: 1.8rem; color: var(--green); line-height: 1; }
+    .cd-label { font-size: 9px; letter-spacing: .8px; text-transform: uppercase; color: var(--muted); }
+    .cd-sep { font-family: var(--font-display); font-size: 1.6rem; color: var(--green); opacity: .5; }
+    .stock-bar-wrap { width: 100%; max-width: 280px; }
+    .stock-label { font-size: 11px; font-weight: 700; color: var(--muted); margin-bottom: 6px; text-align: left; }
     .stock-label span { color: #f87171; }
-    .stock-bar {
-      height: 8px;
-      background: rgba(255,255,255,.08);
-      border-radius: 99px;
-      overflow: hidden;
-    }
+    .stock-bar { height: 8px; background: rgba(255,255,255,.08); border-radius: 99px; overflow: hidden; }
     .stock-fill {
-      height: 100%;
-      width: 23%;
+      height: 100%; width: 23%;
       background: linear-gradient(90deg, #4ade80, #22c55e);
       border-radius: 99px;
       animation: pulse-bar 2s ease-in-out infinite;
     }
-    @keyframes pulse-bar {
-      0%, 100% { opacity: 1; }
-      50% { opacity: .7; }
-    }
+    @keyframes pulse-bar { 0%, 100% { opacity: 1; } 50% { opacity: .7; } }
 
-    /* ──────────── SOCIAL PROOF BAR ──────────── */
     .social-proof-bar {
       background: var(--dark);
       border-top: 1px solid rgba(74,222,128,.1);
@@ -528,27 +465,12 @@
       flex-wrap: wrap;
       gap: 24px;
     }
-    .sp-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: .88rem;
-      font-weight: 700;
-      color: #c5d9c8;
-    }
+    .sp-item { display: flex; align-items: center; gap: 8px; font-size: .88rem; font-weight: 700; color: #c5d9c8; }
     .sp-item .sp-icon { font-size: 1.1rem; }
     .sp-item strong { color: var(--green); }
 
-    /* ──────────── SCROLL ANIMATION ──────────── */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .6s ease, transform .6s ease;
-    }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 <body>
@@ -570,29 +492,19 @@
     <div class="hero-product">
       <div class="product-img-wrap">
         <svg viewBox="0 0 240 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Diuriefit Black produto">
-          <!-- Jar body -->
           <rect x="40" y="80" width="160" height="200" rx="24" fill="url(#jarGrad)"/>
-          <!-- Jar lid -->
           <rect x="32" y="58" width="176" height="38" rx="14" fill="url(#lidGrad)"/>
-          <!-- Shine -->
           <rect x="54" y="100" width="18" height="120" rx="9" fill="rgba(255,255,255,0.06)"/>
-          <!-- Label bg -->
           <rect x="56" y="112" width="128" height="136" rx="14" fill="rgba(5,8,7,0.72)"/>
-          <!-- Brand name -->
           <text x="120" y="148" font-family="'Bebas Neue',sans-serif" font-size="22" fill="#4ade80" text-anchor="middle" letter-spacing="3">DIURIEFIT</text>
           <text x="120" y="170" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#f5faf6" text-anchor="middle" letter-spacing="5">BLACK</text>
-          <!-- Divider -->
           <line x1="76" y1="178" x2="164" y2="178" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
-          <!-- Icons row -->
           <text x="84" y="200" font-size="16" text-anchor="middle">💧</text>
           <text x="120" y="200" font-size="16" text-anchor="middle">🔥</text>
           <text x="156" y="200" font-size="16" text-anchor="middle">🌿</text>
-          <!-- Flavor -->
           <rect x="76" y="210" width="88" height="22" rx="8" fill="rgba(74,222,128,0.15)" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
           <text x="120" y="225" font-family="'Nunito',sans-serif" font-size="10" font-weight="800" fill="#4ade80" text-anchor="middle">MAÇÃ VERDE</text>
-          <!-- Net weight -->
           <text x="120" y="250" font-family="'Nunito',sans-serif" font-size="9" fill="rgba(154,176,159,0.7)" text-anchor="middle">200g — 40 porções</text>
-          <!-- Bottom shine -->
           <ellipse cx="120" cy="278" rx="66" ry="8" fill="rgba(74,222,128,0.07)"/>
           <defs>
             <linearGradient id="jarGrad" x1="40" y1="80" x2="200" y2="280" gradientUnits="userSpaceOnUse">
@@ -633,36 +545,41 @@
       </div>
     </div>
 
-    <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta" target="_blank" rel="noopener" style="margin-top:28px">
-      👉 Quero o Diuriefit Black Agora
-    </a>
-    <div class="trust-row">
-      <span>Entrega para todo o Brasil</span>
-      <span>Pagamento 100% seguro</span>
-      <span>Garantia de satisfação</span>
+    <!-- ✅ CTA HERO — com evento de conversão Google Ads -->
+    <div style="margin-top:36px">
+      <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq"
+         class="btn-cta"
+         onclick="gtag('event', 'conversion', {'send_to': 'AW-16917206966/MzU9CLLqyasaELav4II_'});">
+        Quero Me Sentir Mais Leve Agora →
+      </a>
+      <div class="trust-row">
+        <span>Entrega para todo o Brasil</span>
+        <span>Pagamento seguro</span>
+        <span>Garantia de satisfação</span>
+      </div>
     </div>
   </section>
 
-  <hr class="divider" />
-
   <!-- SOCIAL PROOF BAR -->
   <div class="social-proof-bar">
-    <div class="sp-item"><span class="sp-icon">⭐</span><span><strong>4.8/5</strong> em mais de 12.000 avaliações</span></div>
-    <div class="sp-item"><span class="sp-icon">📦</span><span><strong>+50.000</strong> potes entregues</span></div>
-    <div class="sp-item"><span class="sp-icon">🔥</span><span>Viral no <strong>TikTok</strong></span></div>
+    <div class="sp-item"><span class="sp-icon">⭐</span><span>Avaliação <strong>4.9/5</strong> — +2.800 avaliações</span></div>
+    <div class="sp-item"><span class="sp-icon">📦</span><span><strong>+50.000</strong> unidades vendidas</span></div>
     <div class="sp-item"><span class="sp-icon">🛡️</span><span>Aprovado pela <strong>ANVISA</strong></span></div>
+    <div class="sp-item"><span class="sp-icon">🚀</span><span>Entrega em <strong>3–7 dias úteis</strong></span></div>
   </div>
+
+  <!-- SYMPTOMS -->
   <div class="symptoms-block">
-    <div class="section">
-      <div class="section-title fade-up">Você reconhece <span>algum</span> desses sinais?</div>
-      <p class="section-subtitle fade-up">Se você tem 2 ou mais desses sintomas, seu corpo pode estar sofrendo com <strong style="color:var(--green)">retenção de líquido</strong>.</p>
+    <div class="section fade-up">
+      <h2 class="section-title">Você se <span>identifica</span> com algum desses sinais?</h2>
+      <p class="section-subtitle">Se você tem 2 ou mais sintomas abaixo, seu corpo pode estar sofrendo com retenção de líquido — não necessariamente gordura.</p>
       <div class="symptoms-grid">
-        <div class="symptom-card fade-up"><span class="symptom-icon">🦵</span><p>Pernas ou tornozelos inchados no fim do dia</p></div>
-        <div class="symptom-card fade-up"><span class="symptom-icon">⚖️</span><p>Sensação de peso mesmo sem comer em excesso</p></div>
-        <div class="symptom-card fade-up"><span class="symptom-icon">🧦</span><p>Marcas de elástico ou meia na pele</p></div>
-        <div class="symptom-card fade-up"><span class="symptom-icon">📊</span><p>Balança variando 2–3 kg em poucos dias</p></div>
-        <div class="symptom-card fade-up"><span class="symptom-icon">😣</span><p>Barriga estufada e desconforto abdominal</p></div>
-        <div class="symptom-card fade-up"><span class="symptom-icon">😴</span><p>Cansaço fora do comum, sem motivo aparente</p></div>
+        <div class="symptom-card"><span class="symptom-icon">😴</span><p>Acorda com o rosto inchado mesmo após uma noite de sono</p></div>
+        <div class="symptom-card"><span class="symptom-icon">👗</span><p>As roupas apertam mais no fim do dia do que pela manhã</p></div>
+        <div class="symptom-card"><span class="symptom-icon">⚖️</span><p>A balança sobe e desce 2–3 kg sem explicação clara</p></div>
+        <div class="symptom-card"><span class="symptom-icon">🦵</span><p>Pernas ou tornozelos inchados no fim do dia</p></div>
+        <div class="symptom-card"><span class="symptom-icon">🫃</span><p>Barriga estufada e desconforto abdominal constante</p></div>
+        <div class="symptom-card"><span class="symptom-icon">😓</span><p>Cansaço fora do comum, sem motivo aparente</p></div>
       </div>
     </div>
   </div>
@@ -670,59 +587,31 @@
   <hr class="divider" />
 
   <!-- BENEFITS -->
-  <div class="section">
-    <div class="section-title fade-up">O Diuriefit Black <span>atua</span> em 4 frentes</div>
-    <p class="section-subtitle fade-up">Uma fórmula pensada para quem quer resultado visível e duradouro.</p>
+  <div class="section fade-up">
+    <h2 class="section-title">O que o <span>Diuriefit Black</span> faz pelo seu corpo</h2>
+    <p class="section-subtitle">Fórmula de dupla ação: elimina o excesso de líquido e acelera o metabolismo ao mesmo tempo.</p>
     <div class="benefits-grid">
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">💧</div>
-        <h3>Reduz o Inchaço</h3>
-        <p>Elimina o excesso de líquido retido nos tecidos com ação diurética comprovada.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">🔥</div>
-        <h3>Queima Gordura</h3>
-        <p>Potencializa o metabolismo e acelera a queima de gordura localizada.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">⚡</div>
-        <h3>Mais Disposição</h3>
-        <p>Reduz a sensação de peso e cansaço causados pela retenção hídrica.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">🌿</div>
-        <h3>Ação Detox</h3>
-        <p>Limpa o organismo das toxinas e prepara o corpo para a transformação.</p>
-      </div>
+      <div class="benefit-card"><div class="benefit-icon">💧</div><h3>Ação Diurética</h3><p>Ajuda o organismo a eliminar o excesso de líquido retido nos tecidos</p></div>
+      <div class="benefit-card"><div class="benefit-icon">🔥</div><h3>Termogênico</h3><p>Potencializa o metabolismo para acelerar a queima de gordura</p></div>
+      <div class="benefit-card"><div class="benefit-icon">⚡</div><h3>Mais Energia</h3><p>Reduz a sensação de cansaço e pesadume causados pela retenção</p></div>
+      <div class="benefit-card"><div class="benefit-icon">📉</div><h3>Menos Inchaço</h3><p>Resultado visível no visual do corpo em poucas semanas de uso</p></div>
     </div>
-  </div>
-
-  <hr class="divider" />
-
-  <!-- MID CTA -->
-  <div style="text-align:center;padding:40px 20px;background:var(--dark)">
-    <p style="font-size:.92rem;color:var(--muted);margin-bottom:16px">Pronta para sentir a diferença ainda essa semana?</p>
-    <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta" target="_blank" rel="noopener">
-      👉 Quero o Diuriefit Black Agora
-    </a>
   </div>
 
   <hr class="divider" />
 
   <!-- INGREDIENTS -->
   <div class="ingredients-block">
-    <div class="section">
-      <div class="section-title fade-up">Nosso <span>segredinho</span></div>
-      <p class="section-subtitle fade-up">Ingredientes naturais selecionados a dedo para máxima eficiência.</p>
+    <div class="section fade-up">
+      <h2 class="section-title">Ingredientes <span>100% naturais</span></h2>
+      <p class="section-subtitle">Cada ativo foi escolhido por sua eficácia comprovada e segurança.</p>
       <div class="ingredients-grid">
-        <div class="ing-card fade-up"><span class="ing-emoji">🌾</span><div><h4>Inulina</h4><p>Equilíbrio intestinal e digestão mais leve</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">🍵</span><div><h4>Chá Verde</h4><p>Acelera o metabolismo e ajuda na queima de gordura</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">💊</span><div><h4>Cromo</h4><p>Ajuda a controlar o apetite e a vontade por doces</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">🌿</span><div><h4>Carqueja</h4><p>Auxilia no detox e na redução do inchaço</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">✨</span><div><h4>Colágeno</h4><p>Contribui para a firmeza da pele durante o emagrecimento</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">🫖</span><div><h4>Chá Preto</h4><p>Mais energia e antioxidantes para o dia a dia</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">🌺</span><div><h4>Chá de Hibisco</h4><p>Diurético natural que combate a retenção de líquidos</p></div></div>
-        <div class="ing-card fade-up"><span class="ing-emoji">💉</span><div><h4>Vitaminas</h4><p>Suporte essencial para energia, equilíbrio e bem-estar</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">🌿</span><div><h4>Cavalinha</h4><p>Potente diurético natural, reduz retenção e inchaço</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">🍵</span><div><h4>Chá Verde</h4><p>Antioxidante e termogênico que acelera o metabolismo</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">🌶️</span><div><h4>Pimenta Cayena</h4><p>Estimula a termogênese e o gasto calórico</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">🍋</span><div><h4>Vitamina C</h4><p>Suporte imunológico e combate ao estresse oxidativo</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">🌱</span><div><h4>Hibisco</h4><p>Auxilia no controle do inchaço e bem-estar geral</p></div></div>
+        <div class="ing-card"><span class="ing-emoji">💊</span><div><h4>Vitaminas do Complexo B</h4><p>Suporte energético e funções metabólicas essenciais</p></div></div>
       </div>
     </div>
   </div>
@@ -730,52 +619,56 @@
   <hr class="divider" />
 
   <!-- PRICING -->
-  <div class="section">
-    <div class="section-title fade-up" style="text-align:center">Escolha o seu <span>Sabor</span></div>
-    <p class="section-subtitle fade-up" style="text-align:center">Disponível em Laranja e Maçã Verde. Entrega para todo o Brasil.</p>
+  <div class="section fade-up">
+    <h2 class="section-title">Escolha seu <span>kit</span></h2>
+    <p class="section-subtitle">Quanto mais potes, maior o desconto e mais tempo de tratamento contínuo.</p>
     <div class="pricing-grid">
 
-      <div class="price-card fade-up">
-        <div class="flavor-tag">🍊 Sabor Laranja</div>
-        <h3>1 Pote — Diuriefit Black</h3>
-        <div class="duration">📅 Duração de 30 dias</div>
-        <div class="price-installment">12x de</div>
-        <div class="price-main">R$17,32</div>
-        <div class="price-sub">ou R$ 167,49 à vista</div>
-        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta outline" target="_blank" rel="noopener" style="display:block;text-align:center;padding:14px 20px;font-size:.92rem">
-          COMPRAR AGORA →
+      <div class="price-card">
+        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <h3>1 Pote — Experimento</h3>
+        <div class="price-installment">ou 12x de</div>
+        <div class="price-main">R$17</div>
+        <div class="price-sub">à vista R$197</div>
+        <div class="duration">⏱ 40 dias de uso</div>
+        <!-- ✅ CTA PRICING 1 — com evento de conversão Google Ads -->
+        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq"
+           class="btn-cta outline"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-16917206966/MzU9CLLqyasaELav4II_'});">
+          Comprar Agora
         </a>
       </div>
 
-      <div class="price-card featured fade-up">
-        <div class="flavor-tag">🍏 Sabor Maçã Verde</div>
-        <h3>1 Pote — Diuriefit Black</h3>
-        <div class="duration">📅 Duração de 30 dias</div>
-        <div class="price-installment">12x de</div>
-        <div class="price-main">R$17,32</div>
-        <div class="price-sub">ou R$ 167,49 à vista</div>
-        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta" target="_blank" rel="noopener" style="display:block;text-align:center;padding:14px 20px;font-size:.92rem">
-          COMPRAR AGORA →
+      <div class="price-card featured">
+        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <h3>3 Potes — Resultado Completo</h3>
+        <div class="price-installment">ou 12x de</div>
+        <div class="price-main">R$39</div>
+        <div class="price-sub">à vista R$447 — economia de R$144</div>
+        <div class="duration">⏱ 120 dias de uso</div>
+        <!-- ✅ CTA PRICING 2 (destaque) — com evento de conversão Google Ads -->
+        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq"
+           class="btn-cta"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-16917206966/MzU9CLLqyasaELav4II_'});">
+          Quero os 3 Potes →
         </a>
       </div>
 
-      <div class="price-card fade-up">
-        <div class="flavor-tag">🍊🍏 Combo Misto</div>
-        <h3>2 Potes — Laranja + Maçã Verde</h3>
-        <div class="duration">📅 Duração de 60 dias</div>
-        <div class="price-installment">12x de</div>
-        <div class="price-main">R$26,90</div>
-        <div class="price-sub">ou R$ 267,49 à vista</div>
-        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta outline" target="_blank" rel="noopener" style="display:block;text-align:center;padding:14px 20px;font-size:.92rem">
-          COMPRAR AGORA →
+      <div class="price-card">
+        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <h3>2 Potes — Manutenção</h3>
+        <div class="price-installment">ou 12x de</div>
+        <div class="price-main">R$29</div>
+        <div class="price-sub">à vista R$327 — economia de R$67</div>
+        <div class="duration">⏱ 80 dias de uso</div>
+        <!-- ✅ CTA PRICING 3 — com evento de conversão Google Ads -->
+        <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq"
+           class="btn-cta outline"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-16917206966/MzU9CLLqyasaELav4II_'});">
+          Comprar Agora
         </a>
       </div>
 
-    </div>
-    <div class="trust-row" style="margin-top:32px">
-      <span>Compra 100% Segura</span>
-      <span>Privacidade Protegida</span>
-      <span>Frete Grátis acima de R$119</span>
     </div>
   </div>
 
@@ -783,59 +676,31 @@
 
   <!-- TESTIMONIALS -->
   <div class="testimonials-block">
-    <div class="section">
-      <div class="section-title fade-up" style="text-align:center">Quem já usou <span>aprovou</span></div>
-      <p class="section-subtitle fade-up" style="text-align:center">Resultados reais de quem faz parte da família Diuriefit.</p>
+    <div class="section fade-up">
+      <h2 class="section-title">O que quem já usou está <span>dizendo</span></h2>
+      <p class="section-subtitle">Resultados reais de clientes que usaram o Diuriefit Black.</p>
       <div class="testimonials-grid">
-
-        <div class="testimonial-card fade-up">
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <div class="emoji-tag">🍏</div>
-          <h4>"Me senti mais leve já na primeira semana"</h4>
-          <p>Comecei a usar sem muita expectativa, mas o inchaço diminuiu rápido e minha digestão melhorou muito. Hoje faz parte da minha rotina.</p>
-          <div class="author">Camila R. — São Paulo, SP</div>
+          <div class="emoji-tag">💧</div>
+          <h4>Barriga muito menos inchada em poucos dias</h4>
+          <p>Comecei a usar e logo senti minha barriga mais leve. Nunca tinha experimentado nada que desse resultado tão rápido.</p>
+          <div class="author">Fernanda R. — São Paulo, SP</div>
         </div>
-
-        <div class="testimonial-card fade-up">
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <div class="emoji-tag">💚</div>
-          <h4>"Finalmente algo natural que funciona"</h4>
-          <p>Já testei várias coisas, mas esse foi o primeiro produto natural que realmente senti diferença no corpo e no bem-estar.</p>
-          <div class="author">Juliana M. — Belo Horizonte, MG</div>
+          <div class="emoji-tag">👗</div>
+          <h4>As calças voltaram a fechar direitinho</h4>
+          <p>Sofria com pernas inchadas todo fim de dia. Depois de algumas semanas usando o Diuriefit Black, a diferença foi absurda.</p>
+          <div class="author">Carla M. — Belo Horizonte, MG</div>
         </div>
-
-        <div class="testimonial-card fade-up">
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <div class="emoji-tag">🧡</div>
-          <h4>"Menos retenção e mais disposição"</h4>
-          <p>Sofria muito com retenção de líquido. Depois de algumas semanas usando, me sinto mais leve e com mais energia no dia a dia.</p>
-          <div class="author">Renata L. — Curitiba, PR</div>
+          <div class="emoji-tag">🔥</div>
+          <h4>Primeiro que realmente senti resultado</h4>
+          <p>Já tinha tentado vários chás e termogênicos. Esse foi o primeiro que realmente funcionou pra mim. Indico muito.</p>
+          <div class="author">Aline T. — Curitiba, PR</div>
         </div>
-
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <div class="emoji-tag">🍊</div>
-          <h4>"Mudou minha relação com o inchaço"</h4>
-          <p>O inchaço sempre me incomodou, principalmente à noite. Hoje me sinto muito mais confortável com meu corpo.</p>
-          <div class="author">Patrícia S. — Porto Alegre, RS</div>
-        </div>
-
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <div class="emoji-tag">✨</div>
-          <h4>"Natural, vegano e eficiente"</h4>
-          <p>Gostei muito por ser vegano e natural. Além disso, realmente ajudou no funcionamento do intestino e na sensação de leveza.</p>
-          <div class="author">Fernanda A. — Florianópolis, SC</div>
-        </div>
-
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <div class="emoji-tag">💪</div>
-          <h4>"As calças voltaram a fechar!"</h4>
-          <p>Eu sofria com pernas inchadas todo fim de dia. Depois de 3 semanas usando, a diferença foi absurda. Totalmente recomendo.</p>
-          <div class="author">Carla M. — Campinas, SP</div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -843,75 +708,69 @@
   <hr class="divider" />
 
   <!-- FAQ -->
-  <div class="section">
-    <div class="section-title fade-up" style="text-align:center">Tire suas <span>dúvidas</span></div>
-    <p class="section-subtitle fade-up" style="text-align:center">Perguntas frequentes sobre o Diuriefit Black.</p>
+  <div class="section fade-up">
+    <h2 class="section-title">Perguntas <span>frequentes</span></h2>
+    <p class="section-subtitle">Tire suas dúvidas antes de comprar.</p>
     <div class="faq-list">
-      <div class="faq-item fade-up">
+      <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          O que é o Diuriefit Black?
+          O Diuriefit Black é aprovado pela ANVISA?
           <span class="arrow">▼</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">O Diuriefit Black é um suplemento alimentar natural e vegano, desenvolvido para auxiliar na redução do inchaço e da retenção de líquidos, promovendo sensação de leveza, bem-estar e equilíbrio no dia a dia.</div>
+          <div class="faq-answer-inner">Sim. O produto é registrado e aprovado pela ANVISA, seguindo todas as normas de segurança e qualidade exigidas para suplementos alimentares no Brasil.</div>
         </div>
       </div>
-      <div class="faq-item fade-up">
+      <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          Em quanto tempo começo a sentir os resultados?
+          Em quanto tempo vejo resultado?
           <span class="arrow">▼</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Algumas pessoas relatam sensação de leveza já nos primeiros dias de uso. Os resultados podem variar de acordo com o organismo, a rotina e a constância no consumo.</div>
+          <div class="faq-answer-inner">Os resultados variam de pessoa para pessoa. Muitos usuários relatam perceber o corpo mais leve nas primeiras semanas de uso contínuo combinado com alimentação equilibrada.</div>
         </div>
       </div>
-      <div class="faq-item fade-up">
+      <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          O produto é natural e vegano?
+          Tem alguma contraindicação?
           <span class="arrow">▼</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Sim. O Diuriefit Black é formulado com ingredientes de origem natural e não contém componentes de origem animal. Também é livre de glúten e açúcar adicionado.</div>
+          <div class="faq-answer-inner">Gestantes, lactantes e pessoas com condições médicas pré-existentes devem consultar um médico antes de usar. Leia sempre o rótulo do produto.</div>
         </div>
       </div>
-      <div class="faq-item fade-up">
+      <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          Pode ser usado diariamente?
+          Qual o prazo de entrega?
           <span class="arrow">▼</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Sim. O Diuriefit Black foi desenvolvido para uso diário, respeitando sempre a forma de uso indicada na embalagem.</div>
+          <div class="faq-answer-inner">A entrega é feita para todo o Brasil em média em 3 a 7 dias úteis após a confirmação do pagamento.</div>
         </div>
       </div>
-      <div class="faq-item fade-up">
+      <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          Causa efeitos colaterais?
+          E se eu não gostar do produto?
           <span class="arrow">▼</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Por ser natural, é bem tolerado pela maioria das pessoas. Caso tenha alguma condição específica, esteja grávida ou faça uso de medicamentos, recomenda-se consultar um profissional de saúde.</div>
-        </div>
-      </div>
-      <div class="faq-item fade-up">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Preciso mudar minha alimentação?
-          <span class="arrow">▼</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Não é obrigatório, mas manter uma alimentação equilibrada e uma boa ingestão de água pode potencializar os resultados.</div>
+          <div class="faq-answer-inner">O produto conta com a política de garantia do vendedor. Consulte os termos na página de compra para saber como acionar a garantia.</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- FINAL CTA -->
-  <div class="final-cta">
-    <h2>Pronta para um corpo<br>mais <span>leve e definido</span>?</h2>
-    <p>O Diuriefit Black está disponível com entrega para todo o Brasil. Clique abaixo e veja as condições atuais de compra.</p>
-    <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq" class="btn-cta" target="_blank" rel="noopener">
-      👉 Quero o Diuriefit Black Agora
+  <div class="final-cta fade-up">
+    <h2>Pronta para se sentir<br><span>mais leve e definida?</span></h2>
+    <p>O Diuriefit Black está disponível com entrega para todo o Brasil. Aproveite as condições atuais antes que o estoque acabe.</p>
+    <!-- ✅ CTA FINAL — com evento de conversão Google Ads -->
+    <a href="https://ev.braip.com/ref?pv=proyjnzg&af=afilxvevyq"
+       class="btn-cta"
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-16917206966/MzU9CLLqyasaELav4II_'});">
+      Quero Me Sentir Mais Leve Agora →
     </a>
-    <div class="trust-row" style="margin-top:24px">
+    <div class="trust-row" style="margin-top:20px">
       <span>Entrega para todo o Brasil</span>
       <span>Pagamento seguro</span>
       <span>Garantia de satisfação</span>
@@ -922,65 +781,51 @@
   <footer>
     <div class="logo-text">DIURIEFIT BLACK</div>
     <p class="disclaimer">
-      Este site tem caráter informativo e educativo. Os resultados podem variar de pessoa para pessoa. Este não é o site oficial do fabricante — acesse diuriefit.com para o site oficial. Consulte um profissional de saúde antes de iniciar qualquer suplementação.
+      Este site tem caráter informativo e educativo. Os resultados podem variar de pessoa para pessoa.
+      Este não é um site oficial do fabricante. Consulte um profissional de saúde antes de iniciar qualquer suplementação.
+      As informações contidas neste site não substituem orientação médica ou nutricional profissional.
     </p>
-    <p class="copyright">COPYRIGHT © DIURIEFIT BLACK | TODOS OS DIREITOS RESERVADOS AO FABRICANTE.</p>
+    <p class="copyright">© 2025 — Todos os direitos reservados.</p>
   </footer>
 
   <script>
-    // FAQ toggle
+    // ──────────── COUNTDOWN — reinicia a cada visita com 3h59m59s ────────────
+    (function() {
+      var total = 3 * 3600 + 59 * 60 + 59;
+      function pad(n){ return String(n).padStart(2,'0'); }
+      function tick(){
+        if(total <= 0) total = 3 * 3600 + 59 * 60 + 59;
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var s = total % 60;
+        document.getElementById('cd-h').textContent = pad(h);
+        document.getElementById('cd-m').textContent = pad(m);
+        document.getElementById('cd-s').textContent = pad(s);
+        total--;
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    // ──────────── FAQ ACCORDION ────────────
     function toggleFaq(btn) {
-      const answer = btn.nextElementSibling;
-      const isOpen = answer.classList.contains('open');
-      document.querySelectorAll('.faq-answer.open').forEach(a => {
-        a.classList.remove('open');
-        a.previousElementSibling.classList.remove('active');
-      });
+      var answer = btn.nextElementSibling;
+      var isOpen = answer.classList.contains('open');
+      document.querySelectorAll('.faq-answer').forEach(function(a){ a.classList.remove('open'); });
+      document.querySelectorAll('.faq-question').forEach(function(b){ b.classList.remove('active'); });
       if (!isOpen) {
         answer.classList.add('open');
         btn.classList.add('active');
       }
     }
 
-    // Scroll fade-up
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
+    // ──────────── SCROLL FADE-UP ────────────
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting) e.target.classList.add('visible');
       });
     }, { threshold: 0.12 });
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  </script>
-  <script>
-    // Countdown Timer — resets to 1h47m on each visit (urgency)
-    function startCountdown() {
-      const key = 'diuriefit_cd_end';
-      let endTime = parseInt(localStorage.getItem(key) || '0');
-      const now = Date.now();
-      if (!endTime || endTime < now) {
-        endTime = now + (1 * 3600 + 47 * 60 + 33) * 1000;
-        try { localStorage.setItem(key, endTime); } catch(e){}
-      }
-      function tick() {
-        const rem = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
-        const h = Math.floor(rem / 3600);
-        const m = Math.floor((rem % 3600) / 60);
-        const s = rem % 60;
-        const pad = n => String(n).padStart(2,'0');
-        const hEl = document.getElementById('cd-h');
-        const mEl = document.getElementById('cd-m');
-        const sEl = document.getElementById('cd-s');
-        if (hEl) hEl.textContent = pad(h);
-        if (mEl) mEl.textContent = pad(m);
-        if (sEl) sEl.textContent = pad(s);
-        if (rem > 0) setTimeout(tick, 1000);
-      }
-      tick();
-    }
-    startCountdown();
+    document.querySelectorAll('.fade-up').forEach(function(el){ observer.observe(el); });
   </script>
 
 </body>
