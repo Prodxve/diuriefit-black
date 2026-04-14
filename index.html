@@ -622,10 +622,23 @@
   <div class="section fade-up">
     <h2 class="section-title">Escolha seu <span>kit</span></h2>
     <p class="section-subtitle">Quanto mais potes, maior o desconto e mais tempo de tratamento contínuo.</p>
+
+    <!-- Seletor de sabor -->
+    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:32px;flex-wrap:wrap;">
+      <button onclick="setSabor('maca')" id="btn-maca"
+        style="background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;border:none;font-family:var(--font-body);font-size:14px;font-weight:800;padding:10px 24px;border-radius:99px;cursor:pointer;letter-spacing:.5px;">
+        🍏 Maçã Verde
+      </button>
+      <button onclick="setSabor('laranja')" id="btn-laranja"
+        style="background:rgba(251,146,60,.15);color:#fb923c;border:2px solid rgba(251,146,60,.4);font-family:var(--font-body);font-size:14px;font-weight:800;padding:10px 24px;border-radius:99px;cursor:pointer;letter-spacing:.5px;">
+        🍊 Laranja
+      </button>
+    </div>
+
     <div class="pricing-grid">
 
       <div class="price-card">
-        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <div class="flavor-tag" id="sabor-1">🍏 MAÇÃ VERDE</div>
         <h3>1 Pote — Experimento</h3>
         <div class="price-installment">ou 12x de</div>
         <div class="price-main">R$17</div>
@@ -640,7 +653,7 @@
       </div>
 
       <div class="price-card featured">
-        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <div class="flavor-tag" id="sabor-2">🍏 MAÇÃ VERDE</div>
         <h3>3 Potes — Resultado Completo</h3>
         <div class="price-installment">ou 12x de</div>
         <div class="price-main">R$39</div>
@@ -655,7 +668,7 @@
       </div>
 
       <div class="price-card">
-        <div class="flavor-tag">MAÇÃ VERDE</div>
+        <div class="flavor-tag" id="sabor-3">🍏 MAÇÃ VERDE</div>
         <h3>2 Potes — Manutenção</h3>
         <div class="price-installment">ou 12x de</div>
         <div class="price-main">R$29</div>
@@ -816,6 +829,34 @@
       if (!isOpen) {
         answer.classList.add('open');
         btn.classList.add('active');
+      }
+    }
+
+    // ──────────── SELETOR DE SABOR ────────────
+    function setSabor(sabor) {
+      var isMaca = sabor === 'maca';
+      var label = isMaca ? '🍏 MAÇÃ VERDE' : '🍊 LARANJA';
+      document.getElementById('sabor-1').textContent = label;
+      document.getElementById('sabor-2').textContent = label;
+      document.getElementById('sabor-3').textContent = label;
+
+      var btnMaca = document.getElementById('btn-maca');
+      var btnLaranja = document.getElementById('btn-laranja');
+
+      if (isMaca) {
+        btnMaca.style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
+        btnMaca.style.color = '#fff';
+        btnMaca.style.border = 'none';
+        btnLaranja.style.background = 'rgba(251,146,60,.15)';
+        btnLaranja.style.color = '#fb923c';
+        btnLaranja.style.border = '2px solid rgba(251,146,60,.4)';
+      } else {
+        btnLaranja.style.background = 'linear-gradient(135deg,#ea580c,#c2410c)';
+        btnLaranja.style.color = '#fff';
+        btnLaranja.style.border = 'none';
+        btnMaca.style.background = 'rgba(74,222,128,.1)';
+        btnMaca.style.color = '#4ade80';
+        btnMaca.style.border = '2px solid rgba(74,222,128,.3)';
       }
     }
 
